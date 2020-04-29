@@ -1,0 +1,5 @@
+<%= form_for [:admin, @tutorial], url: admin_tutorials_import_path do |f| %>
+  <%= f.label :playlist_id %>
+  <%= f.text_field :playlist_id %>
+  <%= f.submit "Import Playlist" %>
+<% end %>
