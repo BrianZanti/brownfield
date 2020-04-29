@@ -15,6 +15,8 @@ Rails.application.routes.draw do
     resources :tutorials, only: [:create, :edit, :update, :destroy, :new] do
       resources :videos, only: [:create]
     end
+    get 'tutorials/import', to: 'tutorial_import#new'
+    post 'tutorials/import', to: 'tutorial_import#create'
     resources :videos, only: [:edit, :update, :destroy]
 
     namespace :api do
