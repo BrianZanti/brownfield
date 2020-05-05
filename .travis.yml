@@ -15,5 +15,6 @@ script:
 deploy:
   provider: heroku
   api_key:
-  app:
-  run: rails db:migrate
+    secure: G6UcP8A53CsEKU/53vfZ9ytzh5IIGa29JZQqymAS6vfC3lflXfqQ5ews+pOmHIfGeCHQUUvJC2afT0J5HJ+EtWT0WkXpqEIPWtttT0v9HXZj2KRPjt+sGSQpOULma16HzYGmKvq6l7hTD0N1E61zd+0jsVtEAbNkjADWVz5KFyeK2dAyYrWgg3bl+q9fNNegoinI0BSrcITXCtpKQSOmoOcrV/JOl2jp0k5Jordhm543PKe2UPgmweJqMPKNcD4b8RITvi1KvLRr+ok+qZxzEbqRw9qSn42kGu3UHuZK9k4nYS61sgY2HVqsb/UwXV7GBSsjVKQFgYItuC/x9jyyYIDtftgBsfT3+AD2WefiYW0DYauFAX7N0mZ53j4AFeC5ebeb6hUh1eYLUmRU0dZMLN26hR34XyWLau0SPA7Tc53GEPOGIgHb5kl4kojQ9fCIsR8CJQ+bx01mmay7Wk6m3nsjox6rrw288BFhb9iyR47mRdjny0aNyPbmP9bnwdGvIDXvh1gmgoJ6l9MthwD8evCKpMd2NuyUcCb+ZP4J3KR3i6Is0/8xdiT1uX8AOwKTpd/zAV+4vyNw1z+NCnjSQExOFQF9zKxldVAkNln5EpvCuYHy6B+N6Y35wh36E8JzWtaa5ARq1mtxttB2eUaEaNWr/Y6TCW1DzpiXCu48w1o=
+  app: brianfield
+  run: rails db:{migrate,seed}
