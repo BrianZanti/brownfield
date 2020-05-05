@@ -4,7 +4,6 @@ rbenv:
 addons:
   postgresql: 9.6
   chrome: stable
-dist: trusty
 script:
 - yarn
 - bundle exec rails db:{create,migrate} RAILS_ENV=test
